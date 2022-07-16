@@ -3,15 +3,13 @@ uuid = "40f88ad7-cb5f-477f-84aa-dd2946108406"
 authors = ["Pengfei Song"]
 version = "0.1.0"
 
-[compat]
-julia = "1.7"
-
 [deps]
 Bijectors = "76274a88-744f-5084-9051-94815aaf08c4"
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 Catalyst = "479239e8-5488-4da2-87a7-35f2df7eef83"
 DataDrivenDiffEq = "2445eb08-9709-466a-b3fc-47e12bd697a2"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataInterpolations = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
 DelayDiffEq = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 DiffEqBayes = "ebbdde9d-f333-5424-9be2-dbf1e9acfb5e"
 DiffEqFlux = "aae7a2af-3d4f-5e19-a356-7da93b79d9d0"
@@ -61,6 +59,8 @@ Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
 Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
+[compat]
+julia = "1.7"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
