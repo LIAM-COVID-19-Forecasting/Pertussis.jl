@@ -2,18 +2,15 @@
     pertussisage(rhs, StatVar, theta, t)
 
 main model of pertussis.
+agegroup_str = ["0-1m" "2-11m" "1-4y" "5-9y" "10-14y" "15-19y" "20-24y"
+    25-29y" "30-34y" "35-39y" "40-44y" "45-49y" "50-54y" "55-59y" "60-64y"
+    "65-69y" "70-74y" "75-79y" "80-84y" "85+y"]
+
+paramstr: $[\sigma_1; \sigma_{2p}; \sigma_{3p};\sigma_{4p}; \sigma^r_scale;\rho; p_1; p_{2p}; p_{3p}; p_{4p}; t_{2}; t_3; \epsilon_p;\epsilon_t]$
 """
 function pertussisage(rhs, StatVar, theta, t)
-
-    #agegroup_str = ["0-1m" "2-11m" "1-4y" "5-9y" "10-14y" "15-19y" "20-24y"
-    #"25-29y" "30-34y" "35-39y" "40-44y" "45-49y" "50-54y" "55-59y" "60-64y"
-    #"65-69y" "70-74y" "75-79y" "80-84y" "85+y"]#age group division   
     n_agegroup = 20#number of age groups
     Years = collect(2011:1:2020)#years considered in this study
-    #Years_c=collect(2004:1:2021)
-    # paramstr = [L"\sigma_1"; L"\sigma_[2p]"; L"\sigma_[3p]";L"\sigma_[4p]"; L"\sigma^r_scale";
-    #    L"\rho"; L"p_1"; L"p_[2p]"; L"p_[3p]"; L"p_[4p]"; L"t_2"; L"t_3"; L"\epsilon_p";L"\epsilon_t"]
-    #nparam=length(paramstr)
 
     #disease related parameter values
     eta_EDtoD = 365 / 9 * ones(n_agegroup)
