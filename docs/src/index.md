@@ -4,7 +4,7 @@ CurrentModule = Pertussis
 
 # Pertussis
 
-Documentation for [Pertussis](https://github.com/Song921012/Pertussis.jl).
+Documentation for [Pertussis](https://github.com/LIAM-COVID-19-Forecasting/Pertussis.jl).
 
 ```@index
 ```

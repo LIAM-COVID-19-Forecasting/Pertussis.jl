@@ -6,20 +6,20 @@ DocMeta.setdocmeta!(Pertussis, :DocTestSetup, :(using Pertussis); recursive=true
 makedocs(;
     modules=[Pertussis],
     authors="Pengfei Song",
-    repo="https://github.com/Song921012/Pertussis.jl/blob/{commit}{path}#{line}",
+    repo="https://github.com/LIAM-COVID-19-Forecasting/Pertussis.jl/blob/{commit}{path}#{line}",
     sitename="Pertussis.jl",
-    format=Documenter.HTML(;
+    format = Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://Song921012.github.io/Pertussis.jl",
+        canonical="https://LIAM-COVID-19-Forecasting.github.io/Pertussis.jl",
         edit_link="master",
-        assets=String[],
+        assets=String[]
     ),
     pages=[
         "Home" => "index.md",
-    ],
+    ]
 )
 
 deploydocs(;
-    repo="github.com/Song921012/Pertussis.jl",
-    devbranch="master",
+    repo="github.com/LIAM-COVID-19-Forecasting/Pertussis.jl",
+    devbranch="master"
 )
